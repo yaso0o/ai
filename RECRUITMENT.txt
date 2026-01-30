@@ -1,0 +1,7 @@
+numbpy
+tensor 
+panda
+
+
+to activate venv use "source venv/Scripts/activate"
+deactivate it "deactivate"
