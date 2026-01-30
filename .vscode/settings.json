@@ -1,12 +1,32 @@
 {
-    "editor.fontSize": 16,
+  "editor.fontSize": 15,
   "editor.fontFamily": "Fira Code, Consolas, monospace",
   "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
   "editor.wordWrap": "on",
-  "workbench.activityBar.location": "hidden",
-  "workbench.startupEditor": "none",
+
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+
+  "jupyter.askForKernelRestart": false,
+  "jupyter.interactiveWindow.creationMode": "perFile",
+
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.scrollback": 5000
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "args": ["-l", "-i"]
+    }
+  },
+  
+  "terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.rendererType": "dom",
+
+  "workbench.activityBar.location": "hidden",
+  "workbench.startupEditor": "none"
 }
