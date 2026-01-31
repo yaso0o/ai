@@ -1,32 +1,53 @@
 {
-  "editor.fontSize": 15,
+  "editor.fontSize": 18,
   "editor.fontFamily": "Fira Code, Consolas, monospace",
   "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
   "editor.wordWrap": "on",
 
+  // ADD THESE:
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
+  "python.terminal.activateEnvironment": false,
 
   "python.formatting.provider": "black",
   "editor.formatOnSave": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
 
   "jupyter.askForKernelRestart": false,
   "jupyter.interactiveWindow.creationMode": "perFile",
 
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 17,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.profiles.windows": {
     "Git Bash": {
       "path": "C:\\Program Files\\Git\\bin\\bash.exe",
-      "args": ["-l", "-i"]
+      "args": ["--login", "-i"]
     }
   },
   
   "terminal.integrated.gpuAcceleration": "off",
   "terminal.integrated.rendererType": "dom",
 
-  "workbench.activityBar.location": "hidden",
-  "workbench.startupEditor": "none"
+  //"workbench.activityBar.location": "default",
+  "workbench.startupEditor": "none",
+  //"workbench.colorTheme": "One Dark Pro",  // Change after installing theme
+  "workbench.iconTheme": "material-icon-theme"  // If you install Material Icons
 }
